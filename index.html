@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>مجلة ريشة</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="pic.png" alt="شعار ريشة" class="desktop-logo">
+      <h1>مجلة ريشة</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">الرئيسية</a></li>
+        <li><a href="#categories">الفئات</a></li>
+        <li><a href="#about">عن ريشة</a></li>
+        <li><a href="submit.html">أرسل مقالك</a></li>
+      </ul>
+      <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <img src="pic.png" alt="شعار ريشة" class="mobile-logo">
+      <h2>مجلة الفن السمعي البصري</h2>
+      <p>تحليلات، مقالات، مقابلات، وكل ما يخص السينما والإبداع الفني</p>
+    </section>
+
+    <section id="categories" class="categories">
+      <h3>الفئات</h3>
+      <div class="category-grid">
+        <div class="cat-card">سينما</div>
+        <div class="cat-card">إخراج</div>
+        <div class="cat-card">موسيقى</div>
+        <div class="cat-card">تحليل فني</div>
+        <div class="cat-card">مقابلات</div>
+        <div class="cat-card">تعليم</div>
+      </div>
+    </section>
+
+    <section class="featured-articles">
+      <h3>مقالات مختارة</h3>
+      <div class="articles-grid">
+        <article>
+          <h4>فن التكوين البصري في المشهد السينمائي</h4>
+          <p>نظرة تحليلية على كيفية استخدام التكوين البصري لتوجيه عين المشاهد...</p>
+        </article>
+        <article>
+          <h4>مقابلة مع مخرج جزائري شاب</h4>
+          <p>حديث عن التحديات والإبداع وسط الإمكانيات المحدودة...</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>جميع الحقوق محفوظة © مجلة ريشة 2025</p>
+  </footer>
+  <script>
+  function toggleMenu() {
+    const navLinks = document.querySelector('nav ul');
+    navLinks.classList.toggle('show-menu');
+  }
+  </script>
+</body>
+</html>
